@@ -37,10 +37,6 @@ const sql_art = `CREATE TABLE Art (
 )`;
 
 const sql_update = `UPDATE Art SET buyerID = NULL WHERE artID = 4`
-const sql_delete = `
-DELETE FROM Collector WHERE userID = 8;
-DELETE FROM User WHERE userID = 8
-`
 
-db.run(sql_delete);
+db.run(sql_update);
 
